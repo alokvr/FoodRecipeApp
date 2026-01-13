@@ -19,10 +19,9 @@ const Search: React.FC<searchModel> = ({ searchText, onSearchChange }) => {
       <TextField
         value={searchText}
         size="small"
-        id="searchbox"
         placeholder="Search Recipe"
         variant="outlined"
-        className="w-96"
+        className="w-full sm:w-96"
         onChange={(e) => onSearchChange(e.target.value)}
         sx={{
           "& .MuiOutlinedInput-root": {

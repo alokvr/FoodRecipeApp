@@ -15,7 +15,7 @@ const Category: React.FC<CategoryList> = ({
 }) => {
   return (
     <>
-      <h1 className="mb-4">Categories</h1>
+      <h1 className="mb-3 text-base sm:text-lg font-semibold">Categories</h1>
       <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
         {categories.map((item) => {
           const isSelected = selectedCuisineList.includes(item);

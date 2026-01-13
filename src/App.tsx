@@ -7,23 +7,21 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <>
-      <Box className="w-full h-screen flex flex-col overflow-hidden">
-        <Box className="fixed top-0 left-0 w-full">
-          <Header />
-        </Box>
-        <Box className="h-18" />
-        <Box className="flex-1 overflow-y-auto overflow-x-hidden">
-          <Box className="flex justify-center items-center min-h-full p-4">
-            <Card className="w-[95%] min-h-[95%] rounded-[25px]!">
-              <CardContent className="h-full">
-                <Dashboard />
-              </CardContent>
-            </Card>
-          </Box>
+    <Box className="w-full min-h-screen flex flex-col bg-yellow-100">
+      <Box className="fixed top-0 left-0 w-full z-50 bg-white">
+        <Header />
+      </Box>
+      <Box className="h-16" />
+      <Box className="flex-1 overflow-y-auto px-2 sm:px-4">
+        <Box className="flex justify-center py-4">
+          <Card className="w-full max-w-7xl rounded-2xl">
+            <CardContent>
+              <Dashboard />
+            </CardContent>
+          </Card>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 }
 
